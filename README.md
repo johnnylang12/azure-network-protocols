@@ -34,13 +34,13 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
  1.) The first thing we are going to do is create a resource group so we can put both of our virtual machines in. Once we have our resource group made we then want to make our first virtual machine. The first virtual machine we are going to make is a Windows 10 vm. Select the resource you made, and then name the virtual machine VM1. Make sure you select Windows 10 Pro, version 22H as the operating system. As for the size of the machine we are going to want atleast 2 vcpus, and 16 gb of memory. Create a username and password of your choosing, and keep the inbound port rules as the default options.
 
 <p>
-<img src="https://imgur.com/WgPD275.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/WgPD275.png" height="80%" width="60%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   
 
 <p>
-<img src="https://imgur.com/X6ZMTJG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/X6ZMTJG.png" height="80%" width="60%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   
@@ -48,7 +48,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
   
 
 <p>
-<img src="https://imgur.com/XzdSPoR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/XzdSPoR.png" height="80%" width="60%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   
@@ -57,12 +57,12 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
   Now that we have created our first VM we are going to go ahead and create our second VM, but this time it will be a Ubuntu Server 20.04 LTS machine. It will be the same process as creating our first machine but instead we are going to switch the SSH public key to password instead. 
   
 <p>
-<img src="https://imgur.com/0KT3Fmb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/0KT3Fmb.png" height="80%" width="60%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   
 <p>
-<img src="https://imgur.com/pyxsHfF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/pyxsHfF.png" height="80%" width="60%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   
@@ -71,7 +71,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
   The networking should automatically give us the virtual network from VM1 as well as the subnet. 
   
 <p>
-<img src="https://imgur.com/3fQXRcw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/3fQXRcw.png" height="80%" width="60%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
  
@@ -84,19 +84,19 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
  3.) Open wireshark and filter for ICMP traffic only.
  
  <p>
-<img src="https://imgur.com/RrtChUe.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/RrtChUe.png" height="80%" width="60%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
  
  4.) We are going to want to retrieve the private IP address of our Ubuntu VM and then attempt to ping it from within our Windows 10 VM using wireshark. To ping the private IP address of the Ubuntu machine open CMD or Powershell on the Windows machine and type: ping 10.0.0.5 or whatever the private IP address is for your Ubuntu machine.
  
 <p>
-<img src="https://imgur.com/zmJzyne.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/zmJzyne.png" height="80%" width="60%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
  
 <p>
-<img src="https://imgur.com/pp4eZdK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/pp4eZdK.png" height="80%" width="60%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
  
@@ -107,12 +107,12 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 6.) Open the Network Security Group of our Ubuntu machine and disable incoming (inbound) ICMP traffic. To disable incoming ICMP traffic click "Add" new rule and copy everything exactly from the picture. Once that is done you can create the rule and it will create automatically and show up as a new rule.
  
  <p>
-<img src="https://imgur.com/r3dH3Yy.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/r3dH3Yy.png" height="80%" width="60%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
  
 <p>
-<img src="https://imgur.com/qiSIrsX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/qiSIrsX.png" height="80%" width="60%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
  
